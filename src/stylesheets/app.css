@@ -1,17 +1,239 @@
-/* APP FONT */
-@import url("src/app_font.css");
+/***********
+ * IMPORTS *
+ ***********/
 
-/* MATERIAL ICONS */
-@import url("src/material_icons.css");
+/* Font */
+@import url("modules/font.css");
+
+/* Material Icons */
+@import url("modules/material_icons.css");
+
+/* Links */
+@import url("modules/links.css");
 
 
 
-/*********************
-* APP CORE CONTAINER *
-**********************/
-html, body { height: 100%; width: 100%;}
-body {
-    margin: 0;
-    padding:0;
-    font-family: "Roboto", sans-serif;
+
+
+
+/***********************
+ * APP OUTER CONTAINER *
+ ***********************/
+*, *::before, *::after { box-sizing: border-box; border: none; background-repeat: no-repeat; }
+html { font-family: "Roboto", sans-serif; word-break: break-word; scroll-behavior: smooth; }
+body { margin: 0; padding:0; }
+
+
+
+
+/*****************
+ * APP CONTAINER *
+ *****************/
+.app-container {
+
+}
+
+
+/***************
+ * HEADING NAV *
+ ***************/
+.heading-nav {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px 75px;
+}
+
+.heading-nav img { 
+    width: 250px;
+    height:auto;
+}
+
+
+/* Nav Links */
+.heading-nav .nav-links {
+    margin: 0 0 0 auto;
+}
+
+.heading-nav .nav-links a {
+    margin: 0 30px 0 30px;
+    font-weight:600;
+}
+.heading-nav .nav-links a:first-child { margin-left: 0 }
+.heading-nav .nav-links a:last-child { margin-right: 0 }
+
+
+/* Mobile Dropdown Menu */
+.dropdown-menu {
+    position: relative;
+    display: none;
+    margin-left: auto;
+}
+.dropdown-menu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right:0px;
+}
+.dropdown-menu-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    display: flex;
+    align-items: center;
+}
+.dropdown-menu-content a > .material-icons { margin-right: 5px; }
+.dropdown-menu-content a:hover { background-color: #f1f1f1 }
+.dropdown-menu:hover .dropdown-menu-content {
+    display: block;
+}
+
+
+
+
+/**********
+ * SPLASH *
+ **********/
+.splash-container {
+    width: 100%;
+    height: 600px;
+    background-image: url(../assets/img/splash.jpg);
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+/**********
+ * FOOTER *
+ **********/
+.footer {
+    margin-top: 15px;
+    padding: 15px 5px;
+    text-align: center;
+    background-color: #0D4409;
+    color:white;
+}
+
+
+
+
+
+
+/****************************
+ * RESPONSIVE MEDIA QUERIES *
+ ****************************/
+
+
+/*
+ * DEVICE: Desktops
+ * SCREEN: 1281px to higher resolution desktops
+ */
+@media (min-width: 1281px) {
+
+
+
+}
+
+
+/*
+ * DEVICE: Laptops, Desktops
+ * SCREEN: B/w 1025px to 1280px
+ */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /***************
+    * HEADING NAV *
+    ***************/
+
+    /* Nav Links */
+    .heading-nav .nav-links a { margin: 0 15px 0 15px; }
+
+    /* Mobile Dropdown Menu */
+    .dropdown-menu { display: none;}
+
+}
+
+
+/*
+ * DEVICE: Tablets, Ipads (portrait)
+ * SCREEN: B/w 768px to 1024px
+ */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /***************
+    * HEADING NAV *
+    ***************/
+    .heading-nav { padding: 10px; }
+    .heading-nav img {  width: 160px;  }
+
+
+}
+
+
+/*
+ * DEVICE: Tablets, Ipads (landscape)
+ * SCREEN: B/w 768px to 1024px
+ */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /***************
+    * HEADING NAV *
+    ***************/
+    .heading-nav { padding: 10px; }
+    .heading-nav img {  width: 160px; }
+
+
+}
+
+
+/*
+ * DEVICE: Low Resolution Tablets, Mobiles (Landscape)
+ * SCREEN: B/w 481px to 767px
+ */
+@media (min-width: 481px) and (max-width: 767px) {
+    /***************
+    * HEADING NAV *
+    ***************/
+    .heading-nav { padding: 10px; }
+    .heading-nav img {  width: 160px; }
+
+    /* Nav Links */
+    .heading-nav .nav-links { display: none;}
+
+    /* Mobile Dropdown Menu */
+    .dropdown-menu { display: inline-block; }
+    
+
+}
+
+
+/*
+ * DEVICE: Most of the Smartphones Mobiles (Portrait)
+ * SCREEN: 480px to lower resolution mobiles
+ */
+@media (max-width: 480px) {
+    /***************
+    * HEADING NAV *
+    ***************/
+    .heading-nav { padding: 10px; }
+    .heading-nav img {  width: 160px; }
+
+    /* Nav Links */
+    .heading-nav .nav-links { display: none;}
+
+    /* Mobile Dropdown Menu */
+    .dropdown-menu { display: inline-block; }
 }

@@ -6,30 +6,94 @@
     <!-- Viewport | To disable zooming add maximum-scale=1 at the end -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Title & Description-->
+    <!-- Title & Description Tags -->
     <title>Caribbean Kidz</title>
-    <meta name="description" content="Some cool description about the NGO">
+    <meta name="description" content="Caribbean Kidz es una organización sin fines de lucro que ofrece programas educativos sobre ecología, artes y deportes a niños de comunidades desatendidas. Creemos que al enseñar a los niños sobre el medio ambiente y cómo practicar deportes, podemos ayudarlos a desarrollar un amor por ambos para toda la vida.">
+
+    <!-- Open Graph Tags-->
+    <meta property="og:title" content="Caribbean Kidz" />
+    <meta property="og:description" content="Caribbean Kidz es una organización sin fines de lucro que ofrece programas educativos sobre ecología, artes y deportes a niños de comunidades desatendidas. Creemos que al enseñar a los niños sobre el medio ambiente y cómo practicar deportes, podemos ayudarlos a desarrollar un amor por ambos para toda la vida." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" /> <!-- @TODO -->
+    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" /> <!-- @TODO -->
+    <meta property="og:locale" content="es_ES" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 
     <!-- Theme Color @TODO -->
-    <meta name="theme-color" content="#000000">
+    <meta name="theme-color" content="#0D4409">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./stylesheets/app.css">
 </head>
 <body>
-    <h1>Caribbean Kidz</h1>
-    <p>This is just some text Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, veniam. Lorem 
-        ipsum dolor sit, amet consectetur adipisicing elit. Ipsa nulla suscipit nam molestias possimus, distinctio 
-        nobis voluptatem, laboriosam totam ullam molestiae. Quibusdam, aliquam. Mollitia vero expedita rem, dolorum 
-        consequuntur quas.</p>
-    <h4>Icons</h4>
+    <!-- APP CONTAINER -->
+    <div class="app-container" id="top">
 
-    <div>
-        <span class="material-icons md-18">face</span>
-        <span class="material-icons md-24">face</span>
-        <span class="material-icons md-36">face</span>
-        <span class="material-icons md-48">face</span>
+        <!-- HEADING NAVIGATION -->
+        <div class="heading-nav">
+            <!-- Logo -->
+            <a href="#top"><img src="assets/img/logo.png" alt="NGO's Logo"></a>
+            
+            <!-- Nav Links-->
+            <div class="nav-links">
+                <a href="#about_us">NOSOTROS</a>
+                <a href="#activities">ACTIVIDADES</a>
+                <a href="#community">COMUNIDAD</a>
+                <a href="#donations">DONACIONES</a>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="dropdown-menu">
+                <a href="javascript:;"><span class="material-icons">menu</span></a>
+                <div class="dropdown-menu-content">
+                    <a href="#about_us"><span class="material-icons">apartment</span> Nosotros</a>
+                    <a href="#activities"><span class="material-icons">school</span> Actividades</a>
+                    <a href="#community"><span class="material-icons">diversity_3</span> Comunidad</a>
+                    <a href="#donations"><span class="material-icons">volunteer_activism</span> Donaciones</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SPLASH -->
+        <div class="splash-container">
+
+        </div>
+
+        <!-- ABOUT US -->
+        <div id="about_us">
+            <h1>Caribbean Kidz</h1>
+            <p>This is just some text Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, veniam. Lorem 
+                ipsum dolor sit, amet consectetur adipisicing elit. Ipsa nulla suscipit nam molestias possimus, distinctio 
+                nobis voluptatem, laboriosam totam ullam molestiae. Quibusdam, aliquam. Mollitia vero expedita rem, dolorum 
+                consequuntur quas.</p>
+            <h4>Icons</h4>
+        
+            <div>
+                <span class="material-icons md-18">face</span>
+                <span class="material-icons md-24">face</span>
+                <span class="material-icons md-36">face</span>
+                <span class="material-icons md-48">face</span>
+            </div>
+            <span class="material-icons">home</span>
+        </div>
+
+
+
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© Copyright <span id="current_year"></span>. Caribbean Kidz</p>
+        </div>
     </div>
-    <span class="material-icons">home</span>
+
+
+
+    <!-- App Script -->
+    <script>
+        var date = new Date();
+        document.getElementById("current_year").innerText = date.getFullYear();
+    </script>
 </body>
 </html>

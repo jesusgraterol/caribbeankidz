@@ -1,0 +1,21 @@
+
+
+
+
+/********************
+ * BORDERED BUTTONS *
+ ********************/
+.bordered-button:link, .bordered-button:visited {
+    background-color: white;
+    color: inherit;
+    border: 2px solid #0D4409;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.bordered-button:hover, .bordered-button:active {
+    background-color: #0D4409;
+    color: white;
+}
