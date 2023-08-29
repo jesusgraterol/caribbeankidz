@@ -8,7 +8,14 @@ import { Controller } from "./modules/controller.js";
  * configuration.
  */
 const controller = new Controller({
-
+    
+    // Activity Counters
+    activity_counters: {
+        donors: 40,
+        students: 75,
+        sport_activities: 650,
+        ecological_activities: 280
+    },
 });
 
 

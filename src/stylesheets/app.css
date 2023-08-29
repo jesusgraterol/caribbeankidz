@@ -43,9 +43,6 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
 
 
 
-
-
-
 /****************
  * THEME COLORS *
  ****************/
@@ -255,20 +252,18 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
 }
 .programs .programs-container .program-card {
     max-width: 300px;
-    border: 1px solid #c4b7b7;
+    background-color: white;
     margin:30px;
     padding: 15px;
     flex: 1;
     text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .programs .programs-container .program-card ul {
     text-align: left;
 }
 .programs .programs-container .program-card:hover {
-    border: 1px solid white;
-    background-color: white;
     color: #0D4409;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .programs .bottom-text {
     font-size:14px;
@@ -277,6 +272,31 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
 
 
 
+
+
+
+
+
+
+
+/**************
+ * ACTIVITIES *
+ **************/
+.activities {
+    background-color: #267D16;
+    padding: 80px 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.activity-card { 
+    text-align: center;
+    color:white;
+    margin: 30px;
+}
+.activity-card h2 { font-size:34px;margin:10px 0 0 0;}
+.activity-card h5 { font-size:16px;margin:5px 0 0 0;}
 
 
 
@@ -302,6 +322,20 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
 
 
 
+
+
+
+
+/************************
+ * SCROLL TO TOP BUTTON *
+ ************************/
+#scroll_to_top {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+    padding: 5px 10px!important;
+    z-index:1;
+}
 
 
 
@@ -390,6 +424,15 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
         align-items: center;
     }
     .programs .programs-container .program-card { width: 100%; } 
+
+
+
+
+    /**************
+    * ACTIVITIES *
+    **************/
+    .activities {padding: 60px 75px;}
+    .activity-card { margin: 20px; }
 }
 
 
@@ -428,6 +471,15 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
         align-items: center;
     }
     .programs .programs-container .program-card { width: 100%; } 
+
+
+
+
+    /**************
+    * ACTIVITIES *
+    **************/
+    .activities {padding: 60px 75px;}
+    .activity-card { margin: 20px; }
 }
 
 
@@ -480,6 +532,15 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
         align-items: center;
     }
     .programs .programs-container .program-card { width: 100%; } 
+
+
+
+
+    /**************
+    * ACTIVITIES *
+    **************/
+    .activities {padding: 60px 75px;}
+    .activity-card { margin: 20px; }
 }
 
 
@@ -528,4 +589,13 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
         align-items: center;
     }
     .programs .programs-container .program-card { width: 100%; } 
+
+
+
+
+    /**************
+    * ACTIVITIES *
+    **************/
+    .activities {padding: 60px 75px;}
+    .activity-card { margin: 20px; }
 }
