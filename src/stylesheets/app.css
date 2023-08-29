@@ -21,6 +21,10 @@
 
 
 
+
+
+
+
 /*************
  * SANITIZER *
  *************/
@@ -28,9 +32,16 @@
 html { font-family: "Roboto", sans-serif; word-break: break-word; scroll-behavior: smooth; }
 body { margin: 0; padding:0; }
 img {max-width: 100%;}
-ul,ol { list-style: none;padding-left:20px;}
+ul,ol { list-style: none;padding-left:0;}
 ul li, ol li { margin: 10px 0 10px 0; }
 ul li .material-icons, ol li .material-icons { vertical-align: middle;}
+
+
+
+
+
+
+
 
 
 
@@ -46,12 +57,26 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
 
 
 
+
+
+
+
+
+
+
 /*****************
  * APP CONTAINER *
  *****************/
 .app-container {
 
 }
+
+
+
+
+
+
+
 
 
 /***************
@@ -116,6 +141,16 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
 
 
 
+
+
+
+
+
+
+
+
+
+
 /**********
  * SPLASH *
  **********/
@@ -150,6 +185,16 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
 
 
 
+
+
+
+
+
+
+
+
+
+
 /************
  * ABOUT US *
  ************/
@@ -171,7 +216,6 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
 .about-us .about-us-actions a:first-child { margin-right: 15px;}
 .about-us .about-us-actions.desktop-actions { margin-top: 30px; }
 .about-us .about-us-actions.mobile-actions { display:none; margin-top: 15px; }
-
 .about-us .about-us-collage {
     flex: 1;
     text-align: right;
@@ -184,11 +228,68 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
 
 
 
+
+
+
+
+
+
+
+
+
+
+/************
+ * PROGRAMS *
+ ************/
+.programs {
+    background-color: #f7f7f7;
+    padding: 60px 75px;
+}
+.programs .programs-header {
+    text-align: center;
+}
+.programs .programs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.programs .programs-container .program-card {
+    max-width: 300px;
+    border: 1px solid #c4b7b7;
+    margin:30px;
+    padding: 15px;
+    flex: 1;
+    text-align: center;
+}
+.programs .programs-container .program-card ul {
+    text-align: left;
+}
+.programs .programs-container .program-card:hover {
+    border: 1px solid white;
+    background-color: white;
+    color: #0D4409;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.programs .bottom-text {
+    font-size:14px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /**********
  * FOOTER *
  **********/
 .footer {
-    margin-top: 15px;
     padding: 15px 5px;
     text-align: center;
     background-color: #0D4409;
@@ -198,6 +299,11 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
     color:#267D16;
     font-weight: 600;
 }
+
+
+
+
+
 
 
 
@@ -268,11 +374,22 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
     /************
      * ABOUT US *
      ************/
-    .about-us {  flex-direction: column; padding: 15px 10px; }
+    .about-us {  flex-direction: column; padding: 60px 15px; }
     .about-us h1 {  text-align: center; }
     .about-us .about-us-actions.mobile-actions { display:block }
     .about-us .about-us-actions.desktop-actions { display:none }
     .about-us .about-us-collage { text-align: center; }
+
+
+    /************
+    * PROGRAMS *
+    ************/
+    .programs { padding: 60px 15px; }
+    .programs .programs-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .programs .programs-container .program-card { width: 100%; } 
 }
 
 
@@ -295,11 +412,22 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
     /************
      * ABOUT US *
      ************/
-    .about-us {  flex-direction: column; padding: 15px 10px; }
+    .about-us {  flex-direction: column; padding: 60px 15px; }
     .about-us h1 {  text-align: center; }
     .about-us .about-us-actions.mobile-actions { display:block }
     .about-us .about-us-actions.desktop-actions { display:none }
     .about-us .about-us-collage { text-align: center; }
+
+
+    /************
+    * PROGRAMS *
+    ************/
+    .programs { padding: 60px 15px; }
+    .programs .programs-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .programs .programs-container .program-card { width: 100%; } 
 }
 
 
@@ -336,11 +464,22 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
     /************
      * ABOUT US *
      ************/
-    .about-us {  flex-direction: column; padding: 15px 10px; }
+    .about-us {  flex-direction: column; padding: 60px 15px; }
     .about-us h1 {  text-align: center; }
     .about-us .about-us-actions.mobile-actions { display:block }
     .about-us .about-us-actions.desktop-actions { display:none }
     .about-us .about-us-collage { text-align: center; }
+
+
+    /************
+    * PROGRAMS *
+    ************/
+    .programs { padding: 60px 15px; }
+    .programs .programs-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .programs .programs-container .program-card { width: 100%; } 
 }
 
 
@@ -349,11 +488,6 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
  * SCREEN: 480px to lower resolution mobiles
  */
 @media (max-width: 480px) {
-    /*************
-    * SANITIZER *
-    *************/
-    ul,ol { padding-left:15px;}
-
     /***************
     * HEADING NAV *
     ***************/
@@ -378,9 +512,20 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
     /************
      * ABOUT US *
      ************/
-    .about-us {  flex-direction: column; padding: 15px 10px; }
+    .about-us {  flex-direction: column; padding: 60px 15px; }
     .about-us h1 {  text-align: center; }
     .about-us .about-us-actions.mobile-actions { display:block }
     .about-us .about-us-actions.desktop-actions { display:none }
     .about-us .about-us-collage { text-align: center; }
+
+
+    /************
+    * PROGRAMS *
+    ************/
+    .programs { padding: 60px 15px; }
+    .programs .programs-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .programs .programs-container .program-card { width: 100%; } 
 }

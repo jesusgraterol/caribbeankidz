@@ -1,4 +1,4 @@
-import { Initializer } from "./modules/initializer.js";
+import { Controller } from "./modules/controller.js";
 
 
 
@@ -7,7 +7,7 @@ import { Initializer } from "./modules/initializer.js";
  * Initializes the instance of the application with the desired
  * configuration.
  */
-const initializer = new Initializer({
+const controller = new Controller({
 
 });
 
@@ -19,5 +19,5 @@ const initializer = new Initializer({
  * Loads and initializes all required scripts for the app to function.
  * DO NOT MODIFY THIS CODE
  */
-try { initializer.init() } catch (e) { console.log(e) }
+try { controller.initialize() } catch (e) { console.log(e) }
 

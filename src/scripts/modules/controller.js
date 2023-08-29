@@ -1,7 +1,7 @@
 import { DropdownMenu } from "./dropdown_menu.js";
 
 
-export class Initializer {
+export class Controller {
 
 
     // Dropdown Menu Instance
@@ -20,7 +20,7 @@ export class Initializer {
      * Initializes the Applications' Modules and subscribes to 
      * all the neccessary DOM Events.
      */
-    init() {
+    initialize() {
         /**
          * Scroll Event Subscription
          * Whenever a scroll event is triggered, a series of actions are executed:
