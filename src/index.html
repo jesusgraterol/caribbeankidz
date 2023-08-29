@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <!-- Charset-->
     <meta charset="UTF-8">
 
     <!-- Viewport | To disable zooming add maximum-scale=1 at the end -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Title & Description Tags -->
+    <!-- Title & Description -->
     <title>Caribbean Kidz</title>
     <meta name="description" content="Caribbean Kidz es una organización sin fines de lucro que ofrece programas educativos sobre ecología, artes y deportes a niños de comunidades desatendidas. Creemos que al enseñar a los niños sobre el medio ambiente y cómo practicar deportes, podemos ayudarlos a desarrollar un amor por ambos para toda la vida.">
 
-    <!-- Open Graph Tags-->
+    <!-- Open Graph-->
     <meta property="og:title" content="Caribbean Kidz" />
     <meta property="og:description" content="Caribbean Kidz es una organización sin fines de lucro que ofrece programas educativos sobre ecología, artes y deportes a niños de comunidades desatendidas. Creemos que al enseñar a los niños sobre el medio ambiente y cómo practicar deportes, podemos ayudarlos a desarrollar un amor por ambos para toda la vida." />
     <meta property="og:type" content="website" />
@@ -21,7 +22,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 
-    <!-- Theme Color @TODO -->
+    <!-- Theme Color -->
     <meta name="theme-color" content="#0D4409">
 
     <!-- Stylesheet -->
@@ -34,49 +35,96 @@
         <!-- HEADING NAVIGATION -->
         <div class="heading-nav">
             <!-- Logo -->
-            <a href="#top"><img src="assets/img/logo.png" alt="NGO's Logo"></a>
+            <img src="assets/img/logo.png" alt="NGO's Logo">
             
             <!-- Nav Links-->
             <div class="nav-links">
                 <a href="#about_us">NOSOTROS</a>
+                <a href="#programs">PROGRAMAS</a>
                 <a href="#activities">ACTIVIDADES</a>
-                <a href="#community">COMUNIDAD</a>
                 <a href="#donations">DONACIONES</a>
+                <a href="#community">COMUNIDAD</a>
             </div>
 
             <!-- Mobile Menu -->
             <div class="dropdown-menu">
-                <a href="javascript:;"><span class="material-icons">menu</span></a>
-                <div class="dropdown-menu-content">
+                <a id="mobile_menu_button" href="javascript:;" class="tooltip">
+                    <span class="material-icons">menu</span>
+                    <span class="tooltip-text left">Ver menú</span>
+                </a>
+                <div id="dropdown_menu_content" class="dropdown-menu-content">
                     <a href="#about_us"><span class="material-icons">apartment</span> Nosotros</a>
-                    <a href="#activities"><span class="material-icons">school</span> Actividades</a>
-                    <a href="#community"><span class="material-icons">diversity_3</span> Comunidad</a>
+                    <a href="#programs"><span class="material-icons">school</span> Programas</a>
+                    <a href="#activities"><span class="material-icons">surfing</span> Actividades</a>
                     <a href="#donations"><span class="material-icons">volunteer_activism</span> Donaciones</a>
+                    <a href="#community"><span class="material-icons">diversity_3</span> Comunidad</a>
                 </div>
             </div>
         </div>
 
         <!-- SPLASH -->
         <div class="splash-container">
-
+            <div class="splash-content">
+                <span class="splash-headline">Apoya nuestra causa</span>
+                <span class="splash-subtitle">Impacta la vida de muchos niños con un pequeño aporte</span>
+                <a class="filled-button" href="#donations">¡DONAR AHORA!</a>
+            </div>
         </div>
 
         <!-- ABOUT US -->
-        <div id="about_us">
-            <h1>Caribbean Kidz</h1>
-            <p>This is just some text Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, veniam. Lorem 
-                ipsum dolor sit, amet consectetur adipisicing elit. Ipsa nulla suscipit nam molestias possimus, distinctio 
-                nobis voluptatem, laboriosam totam ullam molestiae. Quibusdam, aliquam. Mollitia vero expedita rem, dolorum 
-                consequuntur quas.</p>
-            <h4>Icons</h4>
-        
-            <div>
-                <span class="material-icons md-18">face</span>
-                <span class="material-icons md-24">face</span>
-                <span class="material-icons md-36">face</span>
-                <span class="material-icons md-48">face</span>
+        <div id="about_us" class="about-us">
+            <!-- Description -->
+            <div class="about-us-description">
+                <h1>SOBRE NOSOTROS</h1>
+                <p class="about-us-subtitle">
+                    <strong>Caribbean Kidz</strong> es una organización sin fines de lucro ubicada en Playa El Yaque, 
+                    fundada en el año 2020.
+                </p>
+                <p>
+                    Ofrecemos programas de educación básica, ecología, artes y deportes a niños, niñas y adolescentes. 
+                    Nuestra <strong>misión</strong> es proporcionarles las habilidades y conocimientos necesarios para 
+                    descubrir sus talentos, proteger al medio ambiente y desarrollarse como adultos.
+                </p>
+                <p>
+                    Nuestra <strong>visión</strong> es un mundo donde todos los niños y niñas, independientemente de su origen, tengan 
+                    acceso a una educación de calidad y la oportunidad de alcanzar su máximo potencial.
+                </p>
+                <p>Si deseas apoyar nuestra causa, puedes:</p>
+                <ul>
+                    <li>
+                        <span class="material-icons accent-color">favorite</span> 
+                        Realizar una <a href="#donations"><strong>donación</strong></a>
+                    </li>
+                    <li>
+                        <span class="material-icons accent-color">favorite</span> 
+                        Seguirnos a través de nuestra cuenta de 
+                        <a href="https://www.instagram.com/caribbeankidz/" target="_blank" rel="noopener noreferrer">
+                            <strong>Instagram</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="material-icons accent-color">favorite</span> 
+                        Coordinar actividades educativas a través de <a href="#activities"><strong>alianzas</strong></a>
+                    </li>
+                </ul>
+
+                <!-- Desktop Actions -->
+                <div class="about-us-actions desktop-actions">
+                    <a class="filled-button" href="#donations">¡Donar ahora!</a>
+                    <a class="bordered-button" href="#community">¡Unete!</a>
+                </div>
             </div>
-            <span class="material-icons">home</span>
+
+            <!-- Collage -->
+            <div class="about-us-collage">
+                <img src="assets/img/collage.png" alt="Collage de actividades llevadas a cabo por la organización.">
+            </div>
+
+            <!-- Mobile Actions -->
+            <div class="about-us-actions mobile-actions">
+                <a class="filled-button" href="#donations">¡Donar ahora!</a>
+                <a class="bordered-button" href="#community">¡Unete!</a>
+            </div>
         </div>
 
 
@@ -84,16 +132,18 @@
 
         <!-- Footer -->
         <div class="footer">
-            <p>© Copyright <span id="current_year"></span>. Caribbean Kidz</p>
+            <p>
+                © Copyright <span id="current_year"></span>. 
+                <a href="https://github.com/jesusgraterol/caribbeankidz" target="_blank" rel="noopener noreferrer">
+                    <strong>Caribbean Kidz</strong>
+                </a>
+            </p>
         </div>
     </div>
 
 
 
-    <!-- App Script -->
-    <script>
-        var date = new Date();
-        document.getElementById("current_year").innerText = date.getFullYear();
-    </script>
+    <!-- App Initializer -->
+    <script type="module" src="scripts/app.js"></script>
 </body>
 </html>
