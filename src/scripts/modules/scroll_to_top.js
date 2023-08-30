@@ -18,11 +18,9 @@ export class ScrollToTop {
      * it hides it.
      */
     on_scroll_changes() { 
-        // If the user has scrolled down, show the button
-        if (document.documentElement.scrollTop > 400) { this.button_el.style.display = "block" }
-
-        // If the user is at the top, hide the button
-        else { this.button_el.style.display = "none" }
+        document.documentElement.scrollTop > 400 ? 
+            this.button_el.style.display = "block":
+            this.button_el.style.display = "none";
     }
 
 
