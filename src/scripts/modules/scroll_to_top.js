@@ -4,10 +4,9 @@
  * track of scrolling events.
  */
 export class ScrollToTop {
-    #button_id = "scroll_to_top";
     button_el;
     constructor () {
-        this.button_el = document.getElementById(this.#button_id);
+        this.button_el = document.getElementById("scroll_to_top");
     }
 
 

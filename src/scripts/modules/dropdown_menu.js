@@ -4,14 +4,12 @@
  * the methods needed to be able to fully manage it.
  */
 export class DropdownMenu {
-    #menu_button_id = "mobile_menu_button";
-    #content_id = "dropdown_menu_content";
     #visible_class_name = "visible-dropdown-menu-content";
     button_el;
     #menu_content_el;
     constructor() {
-        this.button_el = document.getElementById(this.#menu_button_id);
-        this.#menu_content_el = document.getElementById(this.#content_id);
+        this.button_el = document.getElementById("mobile_menu_button");
+        this.#menu_content_el = document.getElementById("dropdown_menu_content");
     }
 
 

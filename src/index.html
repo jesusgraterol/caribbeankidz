@@ -15,8 +15,8 @@
     <meta property="og:title" content="Caribbean Kidz" />
     <meta property="og:description" content="Caribbean Kidz es una organización sin fines de lucro que ofrece programas educativos sobre ecología, artes y deportes a niños de comunidades desatendidas. Creemos que al enseñar a los niños sobre el medio ambiente y cómo practicar deportes, podemos ayudarlos a desarrollar un amor por ambos para toda la vida." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" /> <!-- @TODO -->
-    <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" /> <!-- @TODO -->
+    <meta property="og:url" content="https://caribbean-kidz.web.app/" />
+    <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/caribbean-kidz.appspot.com/o/public%2Fog_img.png?alt=media&token=37464f11-aba8-49f0-ac47-0b698a0c1505" />
     <meta property="og:locale" content="es_ES" />
 
     <!-- Favicon -->
@@ -27,6 +27,9 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./stylesheets/app.css">
+
+    <!-- Script -->
+    <script type="module" src="./scripts/app.js" defer></script>
 </head>
 <body>
     <!-- APP CONTAINER -->
@@ -115,7 +118,9 @@
                 <!-- Desktop Actions -->
                 <div class="about-us-actions desktop-actions">
                     <a class="filled-button" href="#donations">¡Donar ahora!</a>
-                    <a class="bordered-button" href="#community">¡Unete!</a>
+                    <a class="bordered-button" href="https://www.instagram.com/caribbeankidz/" target="_blank" rel="noopener noreferrer">
+                        ¡Unete!
+                    </a>
                 </div>
             </div>
 
@@ -127,7 +132,9 @@
             <!-- Mobile Actions -->
             <div class="about-us-actions mobile-actions">
                 <a class="filled-button" href="#donations">¡Donar ahora!</a>
-                <a class="bordered-button" href="#community">¡Unete!</a>
+                <a class="bordered-button" href="https://www.instagram.com/caribbeankidz/" target="_blank" rel="noopener noreferrer">
+                    ¡Unete!
+                </a>
             </div>
         </div>
 
@@ -228,73 +235,63 @@
         <div id="donations" class="donations">
             <!-- Make Donation -->
             <div class="donations-make-donation">
-                <!-- Bank Transfer -->
+                <!-- Payment Methods -->
                 <h1>Realizar donación</h1>
                 <p>
                     Puedes realizar una donación a <strong class="primary-color">Caribbean Kidz</strong> a través de las siguientes vías:
                 </p>
 
-                <!-- Bank Transfer -->
-                <div class="donations-payment-method">
-                    <p>Transferencia bancaria</p>
+                <!-- Paypal -->
+                <a href="https://www.paypal.com/paypalme/vanesurfyaque" target="_blank" rel="noopener noreferrer">
+                    <div class="donations-payment-method">
+                        <span class="material-icons md-36">account_balance</span>
+                        <div class="kind">
+                            <p class="title">PayPal</p>
+                            <p class="description">Transferencia bancaria</p>
+                        </div>
+                    </div>
+                </a>
 
-                    <p>Entidad</p>
-                    <p>Banco Banesco</p>
-
-                    <p>Titular</p>
-                    <p>Vanessa @TODO</p>
-
-                    <p>Cédula de identidad</p>
-                    <p>V-00000000</p>
-
-                    <p>Número de cuenta</p>
-                    <p>0134000000000000</p>
+                <!-- Bank Transfer 1 -->
+                <div class="donations-payment-method" id="bank_transfer_method_01">
+                    <span class="material-icons md-36">account_balance</span>
+                    <div class="kind">
+                        <p class="title">Banco Provincial</p>
+                        <p class="description">Transferencia bancaria</p>
+                    </div>
                 </div>
+
+                <!-- Pago Movil 1 -->
+                <div class="donations-payment-method" id="pago_movil_method_01">
+                    <span class="material-icons md-36">phone_iphone</span>
+                    <div class="kind">
+                        <p class="title">Banco Provincial</p>
+                        <p class="description">Pago móvil</p>
+                    </div>
+                </div>
+
+                <!-- Post Donation Instructions -->
+                <p>
+                    Una vez hayas realizado la donación, envíanos un correo electrónico a 
+                    <a href="mailto:vanesurf2020@gmail.com" class="accent-color"><strong>vanesurf2020@gmail.com</strong></a>
+                    proporcionando la siguiente información:
+                </p>
+                <ul>
+                    <li><span class="material-icons">person</span> Nombre o nickname para agregar al listado</li>
+                    <li><span class="material-icons">link</span> Enlace que será incluido en el listado (Opcional)</li>
+                    <li><span class="material-icons">credit_card</span> Comprobante de pago</li>
+                </ul>
+                <p>
+                    Cuando esta información sea recibida y validada, nuestro equipo te incluirá en la lista de donantes en un 
+                    lapso no mayor a 5 días hábiles.
+                </p>
             </div>
 
             <!-- Top Donors -->
             <div class="donations-top-donors">
-                <div class="top-donors-grid">
-                    <div class="donor-card">
-                        <span class="material-icons">account_circle</span> <span class="truncate">Jesus Graterol</span>
-                    </div>
-                    <div class="donor-card">
-                        <span class="material-icons">account_circle</span> <span class="truncate">Some super cool name!</span>
-                    </div>
-                    <div class="donor-card">
-                        <span class="material-icons">account_circle</span> <span class="truncate">Some super cool name!</span>
-                    </div>
-                    <div class="donor-card">
-                        <span class="material-icons">account_circle</span> <span class="truncate">Some super cool name!</span>
-                    </div>
-                    <div class="donor-card">
-                        <span class="material-icons">account_circle</span> <span class="truncate">Some super cool name!</span>
-                    </div>
-                    <div class="donor-card">
-                        <span class="material-icons">account_circle</span> <span class="truncate">Some super cool name!</span>
-                    </div>
-                    <div class="donor-card">
-                        <span class="material-icons">account_circle</span> <span class="truncate">Some super cool name!</span>
-                    </div>
-                    <div class="donor-card">
-                        <span class="material-icons">account_circle</span> <span class="truncate">Some super cool name!</span>
-                    </div>
-                    <div class="donor-card">
-                        <span class="material-icons">account_circle</span> <span class="truncate">Some super cool name!</span>
-                    </div>
-                    <div class="donor-card">
-                        <span class="material-icons">account_circle</span> <span class="truncate">Some super cool name!</span>
-                    </div>
-                    <div class="donor-card">
-                        <span class="material-icons">account_circle</span> <span class="truncate">Some super cool name!</span>
-                    </div>
-                    <div class="donor-card">
-                        <span class="material-icons">account_circle</span> <span class="truncate">Jayme Armstrong</span>
-                    </div>
-                </div>
+                <div class="top-donors-grid" id="top_donors_grid"> <!-- Populated by Controller --> </div>
             </div>
         </div>
-
 
 
 
@@ -311,15 +308,32 @@
         </div>
 
 
+
+
+
         <!-- Scroll to top -->
         <a href="javascript:;" id="scroll_to_top" class="filled-button">
             <span class="material-icons">arrow_upward</span>
         </a>
+
+
+
+
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <!-- Header -->
+                <div class="modal-content-header">
+                    <p id="modal_title" class="modal-title truncate"><!-- Populated by the controller --></p>
+                    <a href="javascript:;" id="modal_close_button"><span class="material-icons">close</span></a>
+                </div>
+
+                <!-- Content -->
+                <div class="modal-internal-content" id="modal_internal_content"><!-- Populated by the controller --></div>
+            </div>
+        </div>
     </div>
-
-
-
-    <!-- App Initializer -->
-    <script type="module" src="scripts/app.js"></script>
 </body>
 </html>

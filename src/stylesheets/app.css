@@ -68,6 +68,49 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
 
 
 
+/*********
+ * MODAL *
+ *********/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+}
+
+.modal-content-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.modal-content-header p { 
+    margin: 0;
+    font-size: 19px;
+    font-weight: 600;
+}
+.modal-content-header a {
+    margin-left: auto;
+}
+
+
+
 
 
 
@@ -338,12 +381,59 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
     background-color: white;
     padding: 60px 75px;
 }
+
+/* Payment Methods */
 .donations .donations-make-donation {
     flex: 1;
 }
 .donations .donations-make-donation h1 { margin-top: 0 }
+
+.donations .donations-make-donation .donations-payment-method {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    margin: 25px 0 25px 0;
+    padding: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+.donations .donations-make-donation .donations-payment-method:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.donations .donations-make-donation .donations-payment-method .material-icons { vertical-align: middle;}
+.donations .donations-make-donation .donations-payment-method .kind {
+    margin-left: 7px;
+}
+.donations .donations-make-donation .donations-payment-method .title {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 700;
+}
+.donations .donations-make-donation .donations-payment-method .description {
+    margin: 0 0 0 0;
+    font-size:15px;
+    color: #8f8382;
+}
+.donations .donations-make-donation a:hover p,
+.donations .donations-make-donation a:hover .material-icons { color: #312e2e }
+
+/* Payment Method Details */
+
+.pm-details-row { margin: 15px 0 15px 0 }
+.pm-details-row:first-child { margin: 10px 0 15px 0 }
+.pm-details-row:last-child { margin: 15px 0 0 0 }
+
+.pm-details-row p { margin: 0 }
+.pm-details-row p:first-child { font-weight: 500 }
+.pm-details-row p:last-child { font-size: 15px; color: #6e6463; margin-top:3px; }
+
+.pm-details-row img { margin-top: 15px;}
+
+
+/* Top Donors Grid */
 .donations .donations-top-donors {
-    flex: 1;
+    flex: 1.5;
 }
 .donations .donations-top-donors .top-donors-grid {
     display: flex;
@@ -358,6 +448,7 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
     background: white;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
     width: 120px;
+    min-height:45px;
     padding:7px 3px 7px 3px;
     margin:7px;
 }
@@ -366,15 +457,16 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
     cursor: pointer;
     color: #0D4409;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    justify-content: center;
+    /*justify-content: center;*/
 }
-.donations .donations-top-donors .top-donors-grid .donor-card:hover .material-icons{
+/*.donations .donations-top-donors .top-donors-grid .donor-card:hover .material-icons{
     display:none;
-}
+}*/
 .donations .donations-top-donors .top-donors-grid .donor-card .material-icons {
     margin-right: 1px;
     font-size:23px;
 }
+
 
 
 
@@ -409,10 +501,11 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
  ************************/
 #scroll_to_top {
     position: fixed;
-    bottom: 30px;
+    bottom: 75px;
     right: 10px;
     padding: 5px 10px!important;
     z-index:1;
+    display: none;
 }
 
 
@@ -473,6 +566,13 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
  * SCREEN: B/w 768px to 1024px
  */
 @media (min-width: 768px) and (max-width: 1024px) {
+    /*********
+    * MODAL *
+    *********/
+    .modal {}
+    .modal-content { width: 50%; }
+
+
     /***************
     * HEADING NAV *
     ***************/
@@ -519,6 +619,12 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
  * SCREEN: B/w 768px to 1024px
  */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /*********
+    * MODAL *
+    *********/
+    .modal {}
+    .modal-content { width: 50%; }
+
     /***************
     * HEADING NAV *
     ***************/
@@ -566,6 +672,12 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
  * SCREEN: B/w 481px to 767px
  */
 @media (min-width: 481px) and (max-width: 767px) {
+    /*********
+    * MODAL *
+    *********/
+    .modal {}
+    .modal-content { width: 70%; }
+
     /***************
     * HEADING NAV *
     ***************/
@@ -627,6 +739,12 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
  * SCREEN: 480px to lower resolution mobiles
  */
 @media (max-width: 480px) {
+    /*********
+    * MODAL *
+    *********/
+    .modal {}
+    .modal-content { width: 85%; }
+
     /***************
     * HEADING NAV *
     ***************/
