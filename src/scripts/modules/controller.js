@@ -108,6 +108,7 @@ export class Controller {
          */
 
         // Subscribe to the donations' payment method modal triggers
+        this._donations.binance_method_el.addEventListener("click", () => { this._donations.open_binance() });
         this._donations.bank_transfer_method_01_el.addEventListener("click", () => { this._donations.open_bank_transfer_01() });
         this._donations.pago_movil_method_01_el.addEventListener("click", () => { this._donations.open_pago_movil_01() });
 

@@ -19,10 +19,10 @@ const controller = new Controller({
      *      place since the NGO was founded.
      */
     activity_counters: {
-        donors: 40,
-        students: 75,
-        sport_activities: 650,
-        ecological_activities: 280
+        donors: 300,
+        students: 120,
+        sport_activities: 960,
+        ecological_activities: 450
     },
 
     /**
@@ -36,7 +36,13 @@ const controller = new Controller({
      */
     donors: [
         { name: "vanesurf2020",         is_company: false,  url: "https://www.instagram.com/vanesurf2020/" },
+        { name: "Funda Arenas",         is_company: true,  url: "" },
         { name: "Jesus Graterol",       is_company: false,  url: "https://twitter.com/jesusgrat_dev" },
-
+        { name: "Instacaja",            is_company: true,  url: "" },
+        { name: "Volunteer Channel",    is_company: true,  url: "" },
+        { name: "Rik",                  is_company: false,  url: "" },
+        { name: "Hotel Oasis Paradise", is_company: true,  url: "" },
+        { name: "Milagros Quintero",    is_company: false,  url: "" },
+        { name: "Hotel California",     is_company: true,  url: "" },
     ]
 });

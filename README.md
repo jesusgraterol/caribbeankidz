@@ -10,6 +10,9 @@
 The website 
 https://caribbean-kidz.web.app/ is a donation that I have made to the Caribbean Kidz team to help them increase awareness in Margarita and the world, and to improve their online presence for fund-raising.
 
+A local instance can be served with:
+
+`python3 -m http.server --directory src`
 
 #
 ## Branding

@@ -8,6 +8,7 @@ import { Modal } from "./modal.js";
  */
 export class Donations {
     // The modal instance
+    binance_method_el;
     bank_transfer_method_01_el;
     pago_movil_method_01_el;
     _modal;
@@ -20,6 +21,7 @@ export class Donations {
 
     constructor (donors) {
         // Initialize the modal's instance
+        this.binance_method_el = document.getElementById("binance_method");
         this.bank_transfer_method_01_el = document.getElementById("bank_transfer_method_01");
         this.pago_movil_method_01_el = document.getElementById("pago_movil_method_01");
         this._modal = new Modal();
@@ -40,6 +42,29 @@ export class Donations {
 
 
 
+    /**
+     * Displays a modal that includes all the details to make a Binance
+     * transfer
+     */
+    open_binance() {
+        this._modal.open(
+            "Transferencia de criptomonedas",
+            `
+                <div class="pm-details-row">
+                    <p>Entidad</p>
+                    <p>Binance</p>
+                </div>
+                <div class="pm-details-row">
+                    <p>Correo electrónico</p>
+                    <p>vanesurf2020@gmail.com</p>
+                </div>
+            `
+        );
+    }
+
+
+
+
 
     /**
      * Displays a modal that includes all the details to make a traditional 
@@ -51,7 +76,7 @@ export class Donations {
             `
                 <div class="pm-details-row">
                     <p>Entidad</p>
-                    <p>Banco Provincial</p>
+                    <p>Banco del Tesoro</p>
                 </div>
                 <div class="pm-details-row">
                     <p>Titular</p>
@@ -59,11 +84,11 @@ export class Donations {
                 </div>
                 <div class="pm-details-row">
                     <p>Cédula de Identidad</p>
-                    <p>V-00000000</p>
+                    <p>V-16684245</p>
                 </div>
                 <div class="pm-details-row">
                     <p>Número de cuenta</p>
-                    <p>0108000000000000</p>
+                    <p>01630900119001095609</p>
                 </div>
             `
         );
@@ -80,7 +105,7 @@ export class Donations {
             `
                 <div class="pm-details-row">
                     <p>Entidad</p>
-                    <p>Banco Provincial (0108)</p>
+                    <p>Banco del Tesoro (0163)</p>
                 </div>
                 <div class="pm-details-row">
                     <p>Titular</p>
@@ -88,7 +113,7 @@ export class Donations {
                 </div>
                 <div class="pm-details-row">
                     <p>Cédula de Identidad</p>
-                    <p>V-00000000</p>
+                    <p>V-16684245</p>
                 </div>
                 <div class="pm-details-row">
                     <p>Número telefónico</p>
