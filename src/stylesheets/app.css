@@ -558,6 +558,12 @@ ul li .material-icons, ol li .material-icons { vertical-align: middle;}
      * ABOUT US *
      ************/
     .about-us .about-us-actions.desktop-actions { margin-top: 15px; }
+
+
+    /************
+    * PROGRAMS *
+    ************/
+    .programs { padding: 60px 0px; }
 }
 
 

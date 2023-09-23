@@ -38,11 +38,12 @@ const controller = new Controller({
         { name: "vanesurf2020",         is_company: false,  url: "https://www.instagram.com/vanesurf2020/" },
         { name: "Funda Arenas",         is_company: true,  url: "" },
         { name: "Jesus Graterol",       is_company: false,  url: "https://twitter.com/jesusgrat_dev" },
-        { name: "Instacaja",            is_company: true,  url: "" },
+        { name: "Instacaja",            is_company: true,  url: "linktr.ee/instacaja" },
         { name: "Volunteer Channel",    is_company: true,  url: "" },
         { name: "Rik",                  is_company: false,  url: "" },
-        { name: "Hotel Oasis Paradise", is_company: true,  url: "" },
+        { name: "Hotel Oasis Paradise", is_company: true,  url: "https://www.instagram.com/hotelparadiseoasis/" },
         { name: "Milagros Quintero",    is_company: false,  url: "" },
         { name: "Hotel California",     is_company: true,  url: "" },
+        { name: "Avenext.org",          is_company: true,  url: "" },
     ]
 });
